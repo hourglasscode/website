@@ -1,0 +1,46 @@
+---
+layout: post
+category: Information
+---
+<p>
+I created this script in order to have a visual representation of previous scans from Nexpose.
+
+In this example, I have a Google calendar with the following scan history.
+</p>
+
+<img src="/images/CalendarLog.png" width="430" alt="CalendarLog">
+
+<p>
+Before we proceed with the script we need to get the <strong>ID</strong> of the Calendar that we will be
+updating.
+  <ul>
+    <li>Open your calendar</li>
+    <li>Click on the small icon with the downward facing arrow</li>
+    <li><img src="/images/calendar.png" width="430" alt="CalendarLog"></li>
+    <li>Click on <strong>Calendar Settings</strong></li>
+    <li>Scroll down and copy the <strong>Calendar ID</strong> into a temporary document.
+        It should look something like this: "abcd123efg456@group.calendar.google.com"</li>
+  </ul>
+  <ul>
+    <li>Go back to the Google Sheet</li>
+    <li>The URL should looke something like this:
+        ""docs.google.com/spreadsheets/d/xyz10/edit#gid=1841025902"</li>
+    <li>Copy and paste the <strong>xyz10</strong> portion respective to your sheet onto
+        the aforementioned temporary document</li>
+    <li>Also notate the name of the sheet containing the log</li>
+  </ul>
+  <ul>
+    <li>Click on <strong>Tools</Strong></li>
+    <li>Click on <strong>Script editor</strong> and paste the code below</li>
+  </ul>
+
+You will need to set the <strong>calendarID, spreadsheetID, and sheetName</strong> variables.
+
+<script src="https://gist.github.com/hourglasscode/bd1eb4d26f81eaf53d85fad89a72c2cc.js"></script>
+
+Once you execute the script, your calendar will be updated to reflect the scans and the scan names on
+the sheet will be highlighted. The highlighting is there to ensure that as you add more scan events to
+the log, those that have previously been added to the calendar are not duplicated.
+
+<p><img src="/images/updateCalendarResult.png" width="800" alt="CalendarLog"></p>
+</p>

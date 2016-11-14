@@ -68,11 +68,6 @@ footer a {
 	color: #ffffff;
 }
 
-header,
-footer {
-	text-align: center;
-}
-
 nav.main-nav ul {
 	margin: 0;
 	padding: 0;
@@ -216,4 +211,17 @@ input[type="submit"] {
 
 .youtube {
 	text-align: center;
+}
+
+.banner img {
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+
+.banner h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+	padding-bottom: 50px;
 }

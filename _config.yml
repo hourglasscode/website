@@ -1,1 +1,7 @@
-url: http://bakery-store.example.com
+# Site settings
+title: HOURGLASS CODE
+email: contact@hourglasscode
+description: > # hourglasscode
+url: "http://hourglasscode.com" # the base hostname & protocol for your site
+twitter_username: hourglasscode
+github_username:  hourglasscode

@@ -1,30 +1,15 @@
 ---
 layout: default
-title: Home
 ---
+
 <div class="container">
-	<div class="columns spacing">
-
-		<div class="column half">
-			<a href="/posts/UpdateCalendar.html">
-				<img src="/images/UpdateCalendar.png" width="430" alt="updateCalendar"></a>
-		</div>
-
-		<div class="column half">
-			<a href="/posts/UpdateCalendar.html"><h3>GOOGLE APPS SCRIPT: updateCalendar</h3></a>
-			<p>Google Apps Script that parses Nexpose Scan history from a Google Sheet
-			   and adds it to a Google Calendar.</p>
-		</div>
-
-		<div class="column half">
-		 <a href="/posts/createAssetGroups.html">
-			 <img src="/images/createAssetGroups.png" width="430" alt="createAssetGroups"></a>
-	  </div>
-
-	  <div class="column half">
-		 <a href="/posts/createAssetGroups.html"><h3>NEXPOSE API SCRIPT: createAssetGroups</h3></a>
-		 <p>Nexpose API Ruby Script that parses an excel csv file with subnets in CIDR notation
-				and creates Dynamic Asset Groups</p>
-	  </div>
-	</div>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <h2>
+          <a class="links" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 </div>

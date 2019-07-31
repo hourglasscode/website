@@ -5,3 +5,19 @@ description: > # hourglasscode
 url: "http://hourglasscode.com" # the base hostname & protocol for your site
 twitter_username: hourglasscode
 github_username:  hourglasscode
+
+markdown: kramdown
+kramdown:
+    input: GFM
+    syntax_highlighter: rouge
+    syntax_highlighter_opts:
+        css_class: 'highlight'
+
+plugins:
+  - jemoji
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+#emoji:
+#  src: "/images/emoji"

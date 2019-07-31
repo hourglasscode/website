@@ -1,30 +1,18 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>{{ page.title }}</title>
-		<link rel="stylesheet" href="/css/style.css">
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700" media="all">
-	</head>
+<!DOCTYPE html>
+<html>
+
+	{% include head.html %}
+
 	<body>
-		<header>
-			<div class="container">
-				<nav class="main-nav">
-					<ul>
-						<li><a href="https://github.com/hourglasscode">
-							<img src="/images/Octocat.png" width="30" alt="Github"></a></li>
-						<li><a href="https://twitter.com/hourglasscode">
-							<img src="/images/Twitter_Logo_White_On_Blue.png" width="30" alt="Github"></a></li>
-					</ul>
-				</nav>
-				<div class="banner">
-						<a href="/"><img src="/images/logo.png" width="50" alt="Bread"></a>
-					  <h1><a href="/">Hourglass<strong>Code</strong></a></h1>
-				</div>
-			</div>
-		</header>
+
+		{% include header.html %}
+
 		<div class="content">
 			{{ content }}
 		</div>
+
+		{% include footer.html %}
+
 	</body>
+
 </html>

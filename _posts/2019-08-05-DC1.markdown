@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "DC: 1"
+date:   2019-08-05
+categories: 
+---
+### Resources:
+* :hammer_and_wrench:Hardware & Software:hash:
+	* Checkout [Setup Your Environment]({{ site.baseurl }}{% post_url 2019-07-31-setup-your-environment %})
+	* GtkHash
+
+1. Download, verify hash, and setup @DCAU7's [DC: 1][DC: 1] Vulnerable OS 
+	* The Network Adapter's default configuration is **Bridged**, I am going to change it to **Host-only** because I do not want it to communicate outsite of my Kali VM
+
+[DC: 1]: [https://www.vulnhub.com/entry/dc-1,292/]

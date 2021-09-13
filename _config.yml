@@ -1,10 +1,10 @@
 # Site settings
 title: HOURGLASS CODE
-email: contact@hourglasscode
+email: p0lym0rph1c@hourglasscode
 description: > # hourglasscode
 url: "http://hourglasscode.com" # the base hostname & protocol for your site
-twitter_username: hourglasscode
-github_username:  hourglasscode
+twitter_username: p0lym0rph1c
+github_username:  p0lym0rph1c
 
 markdown: kramdown
 kramdown:
@@ -12,6 +12,8 @@ kramdown:
     syntax_highlighter: rouge
     syntax_highlighter_opts:
         css_class: 'highlight'
+        block:
+            line_numbers: true
 
 plugins:
   - jemoji
@@ -19,5 +21,5 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-#emoji:
-#  src: "/images/emoji"
+emoji:
+  src: "/images/emoji"

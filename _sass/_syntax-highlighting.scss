@@ -5,8 +5,20 @@
     background: #fff;
 
     .highlighter-rouge & {
-      background: #eef;
+      background: #fff;
     }
+
+    .rouge-table { border: 2px solid black;
+                   border-radius: 10px;
+                   margin-right: auto;
+                   margin-left: auto;}
+
+    td.gutter { border-right: 2px solid black;
+                color: #998;}
+
+    td.code { padding-left: 2em;
+              max-width: 800px;
+              overflow: auto;}
 
     .c     { color: #998; font-style: italic } // Comment
     .err   { color: #a61717; background-color: #e3d2d2 } // Error
@@ -68,3 +80,8 @@
     .vi    { color: #008080 } // Name.Variable.Instance
     .il    { color: #099 } // Literal.Number.Integer.Long
 }
+
+/* Make line numbers unselectable: excludes line numbers from copy-paste user ops */
+.highlight .lineno {-webkit-user-select: none;-moz-user-select: none; -o-user-select: none;} 
+.lineno::-moz-selection {background-color: transparent;} /* Mozilla specific */
+.lineno::selection {background-color: transparent;} /* Other major browsers */

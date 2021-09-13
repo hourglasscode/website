@@ -1,4 +1,4 @@
-_site/
-.sass-cache/
+_site
+.sass-cache
 .jekyll-metadata
-images/emoji/*
+images/emoji

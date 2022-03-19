@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "HackerRank: 30 Days of Code"
-date:   2021-09-08
+date:   2021-09-12
 categories: 
 ---
 
@@ -340,6 +340,9 @@ CHALLENGE TASK:
 - - phone book on a new line in the form name=phoneNumber
 - If an entry for 'name' is not found, print 'Not found'
 - Phone book should be a Dictionary/Map/HashMap data structure
+CONSTRAINTS:
+1 <= n <= 10^5
+1 <= queries <= 10^5
 """
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 #!/bin/python3
@@ -368,7 +371,12 @@ if __name__ == '__main__':
 {% highlight python linenos=table %}
 """
 CHALLENGE TASK:
-
+- Complete function method called 'factorial' that recursively calculates factorial of given integer n
+CONSTRAINT:
+- 2 <= n <= 12
+GIVEN SYNTAX:
+- def factorial(n):
+- everything below and including "if __name__ == '__main__':"
 """
 #!/bin/python3
 
@@ -410,7 +418,13 @@ if __name__ == '__main__':
 {% highlight python linenos=table %}
 """
 CHALLENGE TASK:
-
+- Given a base-10 integer 'n' convert it to base-2 (binary)
+- Find and print the base-10 integer denoting the maximum number of consecutive 1s in n's binary representation
+CONSTRAINT:
+- 1 <= n <= 10^6
+GIVEN SYNTAX:
+- if __name__ == '__main__':
+- n = int(input().strip())
 """
 #!/bin/python3
 
@@ -455,7 +469,33 @@ if __name__ == '__main__':
 {% highlight python linenos=table %}
 """
 CHALLENGE TASK:
-
+- Given a 6 x 6 2D Array, A:
+1 1 1 0 0 0
+0 1 0 0 0 0
+1 1 1 0 0 0
+0 0 2 4 4 0
+0 0 0 2 0 0 
+0 0 1 2 4 0
+- Calculate the hourglass sum for every hourglass in A
+- Then print the maximum hourglass sum
+- An hourglass is defined as a subset of values with indices
+--falling in the following graphical representation:
+1 1 1
+  1
+1 1 1
+- There are 16 hourglasses in A and an hourglass sum is the sum of an hourglass' values
+- In the array above, the maximum hourglass sum is 19 for the hourglass
+2 4 4
+  2
+1 2 4
+CONSTRAINTS:
+- -9 <= A[i][j] <= 9
+- 0 <= i,j <= 5
+GIVEN SYNTAX:
+- if __name__ == '__main__':
+- arr = []
+- for _ in range(6):
+- arr.append(list(map(int, input().rstrip().split())))
 """
 #!/bin/python3
 
@@ -580,7 +620,22 @@ if __name__ == '__main__':
 {% highlight python linenos=table %}
 """
 CHALLENGE TASK:
-
+- Given 2 classes, 'Person' and 'Student' where
+-- Person is the base class and Student is the derived class
+- Complete the Student class by writing the following
+-- A studentconstruction with 4 parameters
+--- 2 strings 'firstName' & 'lastName'
+--- an integer 'idNumber'
+--- an integer array (or vector) of test scores, 'scores'
+-- A char calculate() method that calculates a Student object's averag and returns the grade character representative
+--- of their calculated average
+CONSTRAINTS:
+- 1 <= length of firstName, length of lastName <= 10
+- length of idNumber <= 7
+- 0 <= score <= 100
+GIVEN SYNTAX:
+- 'classPerson' and all it's methods
+- statement 'class Student(Person)'
 """
 class Person:
     def __init__(self, firstName, lastName, idNumber):
@@ -642,7 +697,19 @@ print("Grade:", s.calculate())
 {% highlight python linenos=table %}
 """
 CHALLENGE TASK:
-
+- Given a Book class and a Solution class, write a MyBook class that does the following:
+-- Inherits from Book
+-- Has a parameterized constructor taking 3 parameters
+--- 2 strings 'title' & 'author'
+--- int 'price'
+-- Implements the Book class' abstract display() method so it prints 3 lines:
+--- Title: instance title
+--- Author: instance author
+--- Price: instance price
+GIVEN SYNTAX:
+- from abc import ABCMeta, abstractmethod
+- class Book(object, metaclass=ABCMeta): and all it's attributes
+- everything below and including the statement 'title=input()'
 """
 from abc import ABCMeta, abstractmethod
 class Book(object, metaclass=ABCMeta):
@@ -678,7 +745,21 @@ new_novel.display()
 {% highlight python linenos=table %}
 """
 CHALLENGE TASK:
- 
+- Complete the difference class by writig the following:
+-- A classconstructor that takes an array of integers as a parameter and saves it to the __elements instance variable
+-- A computeDifference method that finds the maximum absolute difference between any 2 numbers in __elements
+--- and stores it in the maximumDifference instance variable
+- The difference class has a private integer array (elements) for 
+-- storing N non-negative integers, and a public integer (maximumDifference) for storing the maximum absolute difference
+--- The maximum absolute difference between two integers in a set of positive integers, lements, is the largest absolute difference |a - b| between any two integers, a and b, in __elements.
+CONSTRAINTS:
+- 1 <= N <= 10
+- 1 <= __elements[i] <= 100, where 0 <= i <= N-1
+GIVEN SYNTAX:
+- class Difference:
+- def__init__(self, a):
+- self.__elements = a
+- everything below and including _ = input()
 """
 class Difference:
     def __init__(self, a):
@@ -713,7 +794,13 @@ print(d.maximumDifference)
 {% highlight python linenos=table %}
 """
 CHALLENGE TASK:
-
+- Complete the insert function in your editor so that it creates a new Node (data is passed as Node constructor argument) and inserts it at the tail end of the linked list referenced by the 'head' parameter.
+- Once the new node is added, return the reference to the head node
+GIVEN SYNTAX:
+- 'class Node' and all its attributes
+- 'class Solution', 'display()' method and all it's attributes
+- the statement 'def insert(self,head,data):'
+- everything below and including the statement 'myList = Solution()'
 """
 #!/bin/python3
 
@@ -749,7 +836,14 @@ mylist.display(head);
 {% highlight python linenos=table %}
 """
 CHALLENGE TASK:
-
+- Read a string 'S' and print it's integer value
+- if 'S' cannot be converted to an integer, print 'Bad String'
+- use String-to-Integer exception handling instead of loops/conditional statements
+CONSTRAINTS:
+- 1 <= |S| <= 6 : |S| is length of string S
+- S is composed of either lowercase letters (a-z) or decimal digits (0-9)
+GIVEN SYNTAX: 
+- S = input()
 """
 #!/bin/python3
 
@@ -775,7 +869,11 @@ except ValueError:
 {% highlight python linenos=table %}
 """
 CHALLENGE TASK:
-
+- Write a Calculator class with a single method: 'int power(int,int)'
+- The power method takes two integers 'n' & 'p' as parameters and returns the integer result of n^p
+- If either 'n' or 'p' is negative, then the method must throw an exception with the message: 'n and p should be non-negative'
+GIVEN SYNTAX: 
+- everything below and including 'myCalculator=Calculator()'
 """
 #!/bin/python3
 

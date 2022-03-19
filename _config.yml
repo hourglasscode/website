@@ -1,10 +1,10 @@
 # Site settings
 title: HOURGLASS CODE
-email: p0lym0rph1c@hourglasscode
+email: contact@hourglasscode.com
 description: > # hourglasscode
 url: "http://hourglasscode.com" # the base hostname & protocol for your site
-twitter_username: p0lym0rph1c
-github_username:  p0lym0rph1c
+twitter_username: hourglasscode
+github_username:  hourglasscode
 
 markdown: kramdown
 kramdown:

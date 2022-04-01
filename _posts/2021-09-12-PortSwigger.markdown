@@ -9,9 +9,9 @@ categories:
 {% highlight python linenos=table %}
 def queueRequests(target, wordlists):
     engine = RequestEngine(endpoint=target.endpoint,
-                           concurrentConnections=25,
-                           requestsPerConnection=200,
-                           pipeline=False
+                           concurrentConnections=100,
+                           requestsPerConnection=1,
+                           pipeline=True
                            )
     engine.start()
 

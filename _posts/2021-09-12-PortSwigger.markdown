@@ -1,9 +1,11 @@
 ---
 layout: post
 title:  "PortSwigger WebSecurity Academy"
-date:   2021-09-12
+date:   2022-04-02
 categories: 
 ---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iYbM89TuZkw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {% capture details %}
 {% highlight python linenos=table %}
@@ -25,5 +27,5 @@ def handleResponse(req, interesting):
 {% endhighlight %}
 {% endcapture %}
 {% capture summary %} 
-### 2FA simple bypass
+### 2FA simple bypass 
 {% endcapture %}{% include details.html %}

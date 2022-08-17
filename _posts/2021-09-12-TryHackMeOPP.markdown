@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "TryHackMe Offensive Pentesting Path"
-date:   2021-09-12
+date:   2022-08-16
 categories: 
 ---
 

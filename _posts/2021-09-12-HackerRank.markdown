@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "HackerRank: 30 Days of Code"
-date:   2021-09-12
+date:   2022-08-17
 categories: 
 ---
 

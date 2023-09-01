@@ -1,4 +1,4 @@
-<details>
-        <summary>{{ summary | markdownify | remove: '<p>' | remove: '</p>' }}</summary>
+<ul><details>
+        <summary class = "button">{{ summary }}</summary>
         {{ details | markdownify }}
-</details>
+</details></ul>

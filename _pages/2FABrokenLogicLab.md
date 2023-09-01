@@ -7,7 +7,7 @@ categories:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iYbM89TuZkw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-{% capture details %}
+
 {% highlight python linenos=table %}
 def queueRequests(target, wordlists):
     engine = RequestEngine(endpoint=target.endpoint,
@@ -25,7 +25,4 @@ def handleResponse(req, interesting):
         table.add(req)
 
 {% endhighlight %}
-{% endcapture %}
-{% capture summary %} 
-### 2FA simple bypass 
-{% endcapture %}{% include details.html %}
+

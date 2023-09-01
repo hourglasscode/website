@@ -35,7 +35,7 @@ $ gobuster dir -u http://0.0.0.0:3333 -w /usr/share/wordlists/dirb/common.txt <b
 {% endcapture %}
 {: .section}
 {% capture summary %} 
-### Reconnaissance :artificial_satellite:
+Reconnaissance :artificial_satellite:
 {% endcapture %}{% include details.html %}
 
 {% capture details %}
@@ -70,5 +70,5 @@ $ mv php-reverse-shell.php php-reverse-shell.phtml
 {% endcapture %}
 {: .section}
 {% capture summary %} 
-### Compromise Webserver
+Compromise Webserver
 {% endcapture %}{% include details.html %}
